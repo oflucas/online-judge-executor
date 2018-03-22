@@ -11,13 +11,13 @@ CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 TEMP_BUILD_DIR = '%s/tmp/' % CURRENT_DIR
 
 SOURCE_FILE_NAMES = {
-    'java': 'example.java',
-    'python': 'example.py'
+    'java': 'Solution.java',
+    'python': 'solution.py'
 }
 
 BINARY_NAMES = {
-    'java': 'example',
-    'python': 'example.py'
+    'java': 'Solution',
+    'python': 'solution.py'
 }
 
 BUILD_COMMANDS = {

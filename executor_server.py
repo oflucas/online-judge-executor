@@ -29,4 +29,4 @@ def build_and_run():
 if __name__ == "__main__":
     # debug=True will restart when there's code change
     eu.load_image()
-    app.run(debug=True)
+    app.run(debug=True) #, threaded=True
