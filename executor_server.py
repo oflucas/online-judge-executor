@@ -1,5 +1,6 @@
 import executor_utils as eu
 import json
+import sys
 
 from flask import Flask
 from flask import jsonify
@@ -27,6 +28,8 @@ def build_and_run():
     return jsonify(result)
 
 if __name__ == "__main__":
+    port = int(sys.argv[1])
+
     # debug=True will restart when there's code change
     eu.load_image()
-    app.run(debug=True) #, threaded=True
+    app.run(port=port) #, debug=True, threaded=True
